@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     console.log("Inside effect");
-    socketio.current = io("http://localhost:3000");
+    socketio.current = io("https://vigyan-backend.onrender.com");
 
     // register events
     socketio.current.onAny((eventName, data) => {
